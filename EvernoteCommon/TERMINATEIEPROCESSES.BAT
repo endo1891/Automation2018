@@ -1,0 +1,1 @@
+taskkill.exe /F /IM iexplore.exe /T
