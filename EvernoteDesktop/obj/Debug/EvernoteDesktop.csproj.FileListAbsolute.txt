@@ -1,0 +1,90 @@
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\obj\Debug\EvernoteDesktop.desktoplabels.resources
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\obj\Debug\EvernoteDesktop.csproj.GenerateResource.Cache
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\nunit.engine.api.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\Mono.Cecil.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\nunit.engine.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\Mono.Cecil.Rocks.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\EvernoteDesktop.dll.config
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\EvernoteDesktop.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\EvernoteDesktop.pdb
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\Autofac.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\AutoMapper.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\EvernoteCommon.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\Ionic.Zip.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\NLog.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\NodaTime.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\nunit.core.engine.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\nunit.framework.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\SpecFlow.Autofac.SpecFlowPlugin.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\WebDriver.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\WebDriver.Support.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\Zlib.Portable.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\EvernoteCommon.pdb
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\Autofac.xml
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\AutoMapper.xml
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\NLog.xml
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\NodaTime.pdb
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\NodaTime.xml
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\nunit.framework.xml
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\WebDriver.xml
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\WebDriver.Support.xml
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\bin\Debug\Zlib.Portable.xml
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\obj\Debug\EvernoteDesktop.csprojResolveAssemblyReference.cache
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\obj\Debug\EvernoteDesktop.dll
+C:\Users\Enda\Dropbox\Projects\C#\AutomationProject\EvernoteDesktop\obj\Debug\EvernoteDesktop.pdb
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\obj\Debug\EvernoteDesktop.csprojResolveAssemblyReference.cache
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\obj\Debug\EvernoteDesktop.desktoplabels.resources
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\obj\Debug\EvernoteDesktop.csproj.GenerateResource.Cache
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\nunit.engine.api.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\nunit.engine.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Mono.Cecil.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Mono.Cecil.Rocks.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\EvernoteDesktop.dll.config
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\EvernoteDesktop.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\EvernoteDesktop.pdb
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Autofac.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\AutoMapper.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\EvernoteCommon.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Ionic.Zip.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Microsoft.Practices.Composite.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\NLog.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\NodaTime.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\nunit.framework.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\SpecFlow.Autofac.SpecFlowPlugin.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\WebDriver.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\WebDriver.Support.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Zlib.Portable.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\EvernoteCommon.pdb
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Autofac.xml
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\AutoMapper.xml
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\NLog.xml
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\NodaTime.pdb
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\NodaTime.xml
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\nunit.framework.xml
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\WebDriver.xml
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\WebDriver.Support.xml
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\bin\Debug\Zlib.Portable.xml
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\obj\Debug\EvernoteDesktop.dll
+C:\Users\Enda\OneDrive\projects\Github Repository\AutomationProject\EvernoteDesktop\obj\Debug\EvernoteDesktop.pdb
