@@ -81,11 +81,6 @@ namespace EvernoteCommon
             }).Named<IWebDriver>("Firefox")
             .InstancePerLifetimeScope();
 
-    
-            builder.RegisterType<InternetExplorerDriver>()
-            .As<IWebDriver>()
-            .Named<IWebDriver>("IE")
-            .InstancePerLifetimeScope();
 
             builder.RegisterType<TestFrameworkConfiguration>()
             .As<ITestFrameworkConfiguration>()

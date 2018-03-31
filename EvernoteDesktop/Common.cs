@@ -17,7 +17,8 @@ namespace EvernoteDesktop
 
         public static void FinalizeTest()
         {
-            var browser = NUnit.Framework.TestContext.Parameters.Get("driver", "Firefox");
+            //var browser = NUnit.Framework.TestContext.Parameters.Get("driver", "Chrome");
+            var browser = ConfigurationManager.AppSettings["driver"];
             ILifetimeScope lifetimeScope;
 
             if (ScenarioContext.Current.TryGetValue("TestScope", out lifetimeScope) && lifetimeScope != null)
@@ -35,7 +36,8 @@ namespace EvernoteDesktop
         {
             get
             {
-                var browser = NUnit.Framework.TestContext.Parameters.Get("driver", "Firefox");
+                //var browser = NUnit.Framework.TestContext.Parameters.Get("driver", "Chrome");
+                var browser = ConfigurationManager.AppSettings["driver"];
                 ILifetimeScope lifetimeScope;
 
                 if (ScenarioContext.Current.TryGetValue("TestScope", out lifetimeScope) && lifetimeScope != null)

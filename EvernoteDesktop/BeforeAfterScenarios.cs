@@ -36,7 +36,8 @@ namespace EvernoteDesktop
                 var container = builder.Build();
                 _testScope = container.BeginLifetimeScope();
 
-                var browser = NUnit.Framework.TestContext.Parameters.Get("driver", "Firefox");
+                //var browser = NUnit.Framework.TestContext.Parameters.Get("driver", "Chrome");
+                var browser = ConfigurationManager.AppSettings["driver"];
                 switch (browser)
                 {
                     case "Chrome":
