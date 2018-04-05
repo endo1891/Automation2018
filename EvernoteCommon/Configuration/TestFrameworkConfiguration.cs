@@ -12,7 +12,7 @@ namespace EvernoteCommon
         public TestFrameworkConfiguration()
         {
             BaseUrl = new Uri(ConfigurationManager.AppSettings["TestingApplicationUri"]);
-            WebDriverName = ConfigurationManager.AppSettings["driver"];
+            WebDriverName = NUnit.Framework.TestContext.Parameters.Get("driver", "Chrome");
         }
     }
 
