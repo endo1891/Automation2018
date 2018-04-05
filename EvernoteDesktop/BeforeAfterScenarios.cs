@@ -54,7 +54,6 @@ namespace EvernoteDesktop
                         driver.Navigate().Refresh();
                         break;
                 }
-
                 ScenarioContext.Current["TestScope"] = _testScope;
             }
         }

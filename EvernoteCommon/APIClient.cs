@@ -18,14 +18,14 @@ namespace EvernoteCommon
         string emailUri = "api_end_point";
         HttpResponseMessage response;
 
-        /*public HttpResponseMessage PutCashInUserAccount(string codeTitre, string currency, int amount)
+        /*public HttpResponseMessage PutCashInUserAccount(string codeTitre, string currency, int amount, string usercode)
         {
             using (var client = new HttpClient())
             {
                 AccountData data = new AccountData { CodeTitrePrefix = codeTitre, Currency = currency, Amount = amount};
                 client.BaseAddress = new Uri(cashUri);
 
-                var response = client.PutAsJsonAsync(cashUri + userCode, data).Result;
+                var response = client.PutAsJsonAsync(cashUri + usercode, data).Result;
                 if (response.IsSuccessStatusCode)
                 {
                     return new HttpResponseMessage(HttpStatusCode.OK);
@@ -53,7 +53,7 @@ namespace EvernoteCommon
                     return new HttpResponseMessage(HttpStatusCode.NotFound);
                 }
             }
-        }
-        */
+        }*/
+        
     }
 }
