@@ -1,1 +1,1 @@
-<Playlist Version="1.0"><Add Test="EvernoteDesktop.LoginPageTesting.LoginPageTestingFeature.LoginValid" /></Playlist>
+<Playlist Version="1.0"><Add Test="EvernoteDesktop.LoginPageTesting.LoginPageTestingFeature.LoginValid" /><Add Test="EvernoteDesktop.LoginPageTesting.LoginPageTestingFeature.LoginInvalid" /></Playlist>

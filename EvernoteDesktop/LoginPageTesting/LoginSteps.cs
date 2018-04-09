@@ -73,5 +73,11 @@ namespace EvernoteDesktop.LoginPageTesting
         {
             Console.WriteLine("logged in");
         }
+
+        [Then(@"I am not logged in")]
+        public void ThenIAmNotLoggedIn()
+        {
+            Console.WriteLine("Not logged in");
+        }
     }
 }

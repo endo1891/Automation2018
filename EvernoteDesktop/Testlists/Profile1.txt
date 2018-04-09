@@ -1,0 +1,2 @@
+AutomationProject.EvernoteDesktop.LoginPageTesting.LoginTestsFeature.Login_Valid
+AutomationProject.EvernoteDesktop.LoginPageTesting.LoginTestsFeature.Login_Invalid

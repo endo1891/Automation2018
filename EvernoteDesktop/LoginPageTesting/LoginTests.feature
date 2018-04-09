@@ -2,7 +2,13 @@
 	Testing the login features
 
 Scenario: Login Valid
-	Given I am on login page
+Given I am on login page
 	And I enter login details
-	When I click submit
-	Then I am logged in
+When I click submit
+Then I am logged in
+
+Scenario: Login Invalid
+Given I am on login page
+	And I enter login details
+When I click submit
+Then I am not logged in
