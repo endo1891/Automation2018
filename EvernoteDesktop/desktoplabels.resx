@@ -107,4 +107,10 @@
   <data name="LoginButton" xml:space="preserve">
     <value>//*[@id="loginButton"]</value>
   </data>
+  <data name="LoginErrorMessage" xml:space="preserve">
+    <value>//*[@class="error-status FieldState-message FieldState_error-message"]</value>
+  </data>
+  <data name="SigninButton" xml:space="preserve">
+    <value>/html/body/div[1]/div/div[1]/div/div/p[1]/a</value>
+  </data>
 </root>

@@ -70,11 +70,29 @@ namespace EvernoteDesktop {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to //*[@class=&quot;error-status FieldState-message FieldState_error-message&quot;].
+        /// </summary>
+        internal static string LoginErrorMessage {
+            get {
+                return ResourceManager.GetString("LoginErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to //*[@id=&quot;password&quot;].
         /// </summary>
         internal static string Password {
             get {
                 return ResourceManager.GetString("Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /html/body/div[1]/div/div[1]/div/div/p[1]/a.
+        /// </summary>
+        internal static string SigninButton {
+            get {
+                return ResourceManager.GetString("SigninButton", resourceCulture);
             }
         }
         

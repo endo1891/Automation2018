@@ -46,8 +46,13 @@ namespace EvernoteDesktop
             //do for rest of page objects
         }
 
-        //STEPS GO HERE
-        
+        [Given(@"I am on login page")]
+        public void GivenIAmOnLoginPage()
+        {
+            ScenarioContext.Current["LoginPage"] = login;
+            login.Navigate();
+        }
+
 
     }
 }
