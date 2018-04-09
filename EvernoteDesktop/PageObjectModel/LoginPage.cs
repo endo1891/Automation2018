@@ -4,14 +4,14 @@ using System;
 
 namespace EvernoteDesktop.PageObjectModel
 {
-    public class LoginPage
+    public class LoginPage : BaseDashboardPage
     {
         private readonly TestingProfile _testingProfile;
         private readonly TestContext _testContext;
         public ITestFrameworkConfiguration _config;
         private readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
-        public LoginPage(TestContext testContext, TestingProfile testProfile, ITestFrameworkConfiguration config)
+        public LoginPage(TestContext testContext, TestingProfile testProfile, ITestFrameworkConfiguration config) : base(testContext, testProfile, config)
         {
             _testingProfile = testProfile;
             _testContext = testContext;
@@ -20,15 +20,45 @@ namespace EvernoteDesktop.PageObjectModel
             Initialize();
         }
 
-        public void Initialize()
+        public override void Initialize()
         {
+            base.Initialize();
             Username = new WebElement(desktoplabels.Username, _testingProfile.WebDriver);
             LoginButton = new WebElement(desktoplabels.LoginButton, _testingProfile.WebDriver);
             Password = new WebElement(desktoplabels.Password, _testingProfile.WebDriver);
+            LoginErrorMessage = new WebElement(desktoplabels.LoginErrorMessage, _testingProfile.WebDriver);
         }
 
         public WebElement Username { get; set; }
         public WebElement LoginButton { get; set; }
         public WebElement Password { get; set; }
+        public WebElement LoginErrorMessage { get; set; }
+
+        public override void Navigate()
+        {
+            _testingProfile.WebDriver.Navigate().GoToUrl(_config.BaseUrl);
+        }
+
+        public void Login(string username, string password)
+        {
+            Username.WaitForVisibility();
+            Username.SendKeys(username);
+            LoginButton.Click();
+            Password.WaitForVisibility();
+            Password.SendKeys(password);
+
+            var errorMsgExists = LoginErrorMessage.Exists();
+            if (errorMsgExists)
+            {
+                _testContext.CurrentUsername = null;
+                _testContext.CurrentPassword = null;
+                _testContext.IsLoggedIn = false;
+            }
+        }
+
+        public void SetToLoggedIn()
+        {
+            _testContext.SetLoggedIn();
+        }
     }
 }

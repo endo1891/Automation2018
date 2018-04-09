@@ -5,6 +5,7 @@ using System;
 using System.Configuration;
 using TechTalk.SpecFlow;
 using EvernoteCommon;
+using NUnit.Framework;
 
 namespace EvernoteDesktop.LoginPageTesting
 {
@@ -46,20 +47,18 @@ namespace EvernoteDesktop.LoginPageTesting
             //do for rest of page objects
         }
         string BaseUrl = ConfigurationManager.AppSettings["TestingApplicationUri"];
-
-        [Given(@"I am on login page")]
-        public void GivenIAmOnLoginPage()
-        {
-            Common.WebDriver.Navigate().GoToUrl(BaseUrl);
-        }
-
+        
         [Given(@"I enter login details")]
         public void GivenIEnterLoginDetails()
         {
-            login.Username.SendKeys("endacarroll02@yahoo.ie");
-            login.LoginButton.Click();
-            login.Password.WaitForVisibility();
-            login.Password.SendKeys("dutchgold1");
+            var username = ConfigurationManager.AppSettings["username"];
+            var password = ConfigurationManager.AppSettings["password"];
+            login.Login(username, password);
+            //login.ConfirmOnLoggedInScreen()
+            //Assert?
+            login.SetToLoggedIn(); //???
+            Assert.IsTrue(_context.IsLoggedIn);
+            ScenarioContext.Current["LoginPage"] = login; // SC.Current["DbPage"] = loggedInDash;
         }
 
         [When(@"I click submit")]
