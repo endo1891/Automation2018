@@ -207,7 +207,7 @@
   </ItemGroup>
   <ItemGroup>
     <ContentWithTargetPath Include="Testlists\Profile1.txt">
-		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		<CopyToOutputDirectory>CopyAlways</CopyToOutputDirectory>
 		<TargetPath>Profile1.txt</TargetPath>
 		</ContentWithTargetPath>
 		<Content Include="Testlists\Profile2.txt">
