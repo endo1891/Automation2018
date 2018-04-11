@@ -204,6 +204,11 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Testlists\Profile1.txt" />
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Testlists\Profile2.txt" />
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
