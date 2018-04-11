@@ -175,15 +175,19 @@
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.Debug.config">
       <DependentUpon>App.config</DependentUpon>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.Profile1.config">
       <DependentUpon>App.config</DependentUpon>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.Release.config">
       <DependentUpon>App.config</DependentUpon>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="LoginPageTesting\LoginTests.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -201,10 +205,12 @@
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
+  </ItemGroup>
   <ItemGroup>
-    <Content Include="Testlists\Profile1.txt">
-		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</Content>
+    <ContentWithTargetPath Include="Testlists\Profile1.txt">
+		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		<TargetPath>Profile1.txt</TargetPath>
+		</ContentWithTargetPath>
 		<Content Include="Testlists\Profile2.txt">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
