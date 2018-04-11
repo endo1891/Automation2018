@@ -2,3 +2,5 @@
 *.tmp
 *.nupkg
 packages/Selenium.WebDriver.GeckoDriver.0.19.0/build/bamboo script oldway.txt
+EvernoteDesktop/obj/Debug/EvernoteDesktop.csproj.FileListAbsolute.txt
+EvernoteCommon/obj/Debug/EvernoteCommon.csproj.FileListAbsolute.txt
