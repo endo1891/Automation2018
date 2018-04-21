@@ -79,6 +79,15 @@ namespace EvernoteDesktop {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to //*[@class=&quot;branding&quot;].
+        /// </summary>
+        internal static string Logo {
+            get {
+                return ResourceManager.GetString("Logo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to //*[@id=&quot;password&quot;].
         /// </summary>
         internal static string Password {

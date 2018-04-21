@@ -49,10 +49,8 @@ namespace EvernoteDesktop
         [Given(@"I am on login page")]
         public void GivenIAmOnLoginPage()
         {
+            login.AutoLoginFirstStep();
             ScenarioContext.Current["LoginPage"] = login;
-            login.Navigate();
         }
-
-
     }
 }

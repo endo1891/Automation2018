@@ -32,7 +32,7 @@ namespace EvernoteDesktop
             }
         }
 
-        public static IWebDriver WebDriver
+        public IWebDriver WebDriver
         {
             get
             {
@@ -52,7 +52,7 @@ namespace EvernoteDesktop
 
         public static void ClearBrowserCache()
         {
-            WebDriver.Manage().Cookies.DeleteAllCookies();
+            new Common().WebDriver.Manage().Cookies.DeleteAllCookies();
         }
 
         public void KillProcesses()
@@ -70,7 +70,7 @@ namespace EvernoteDesktop
         }
 
         public static void SwitchWindow(IList<string> windows) {
-            IList<string> currentWindows = WebDriver.WindowHandles;
+            IList<string> currentWindows = new Common().WebDriver.WindowHandles;
             List<string> newWindows = (from o in currentWindows
                                         join p in windows on o equals p into t
                                         from od in t.DefaultIfEmpty()
@@ -83,8 +83,8 @@ namespace EvernoteDesktop
                 throw new Exception("Didnt find popup window within timeout");
             }
 
-            WebDriver.SwitchTo().Window(newWindow);
-            WebDriver.SwitchTo().Window(currentWindows[0]);
+            new Common().WebDriver.SwitchTo().Window(newWindow);
+            new Common().WebDriver.SwitchTo().Window(currentWindows[0]);
 
         }
 

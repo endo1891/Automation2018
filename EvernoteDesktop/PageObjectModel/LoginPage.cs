@@ -1,5 +1,6 @@
 ﻿using EvernoteCommon;
 using NLog;
+using NUnit.Framework;
 using System;
 
 namespace EvernoteDesktop.PageObjectModel
@@ -27,12 +28,14 @@ namespace EvernoteDesktop.PageObjectModel
             LoginButton = new WebElement(desktoplabels.LoginButton, _testingProfile.WebDriver);
             Password = new WebElement(desktoplabels.Password, _testingProfile.WebDriver);
             LoginErrorMessage = new WebElement(desktoplabels.LoginErrorMessage, _testingProfile.WebDriver);
+            Logo = new WebElement(desktoplabels.Logo, _testingProfile.WebDriver);
         }
 
         public WebElement Username { get; set; }
         public WebElement LoginButton { get; set; }
         public WebElement Password { get; set; }
         public WebElement LoginErrorMessage { get; set; }
+        public WebElement Logo { get; set; }
 
         public override void Navigate()
         {
@@ -59,6 +62,23 @@ namespace EvernoteDesktop.PageObjectModel
         public void SetToLoggedIn()
         {
             _testContext.SetLoggedIn();
+        }
+
+        public void AutoLoginFirstStep()
+        {
+            _testingProfile.WebDriver.Navigate().GoToUrl(_config.BaseUrl);
+            ConfirmRedirectToLoginPage();
+        }
+
+        private void ConfirmRedirectToLoginPage()
+        {
+            if (!Logo.IsDisplayed(new TimeSpan(0, 1, 30)))
+            {
+                throw new InvalidOperationException("navigating to login page failed");
+            }
+            var currentUrl = new Common().WebDriver.Url;
+            var url = _config.BaseUrl.ToString();
+            Assert.IsTrue(currentUrl.Contains(url));
         }
     }
 }
