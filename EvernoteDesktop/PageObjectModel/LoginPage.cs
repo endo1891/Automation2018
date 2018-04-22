@@ -72,7 +72,7 @@ namespace EvernoteDesktop.PageObjectModel
 
         private void ConfirmRedirectToLoginPage()
         {
-            //Logo.WaitForVisibility();
+            Logo.WaitForVisibility();
             if (!Logo.IsDisplayed(new TimeSpan(0, 0, 30)))
             {
                 throw new InvalidOperationException("navigating to login page failed");
