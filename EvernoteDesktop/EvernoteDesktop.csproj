@@ -212,6 +212,9 @@
     <Content Include="Testlists\Profile1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+		<Content Include="Testlists\TestResult.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />
