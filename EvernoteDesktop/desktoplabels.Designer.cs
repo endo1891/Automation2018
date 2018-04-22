@@ -97,7 +97,7 @@ namespace EvernoteDesktop {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to /html/body/div[1]/div/div[1]/div/div/p[1]/a.
+        ///   Looks up a localized string similar to //html/body/div[1]/div/div[1]/div/div/p[1]/a.
         /// </summary>
         internal static string SigninButton {
             get {

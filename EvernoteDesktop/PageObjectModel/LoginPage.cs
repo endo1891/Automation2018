@@ -10,7 +10,7 @@ namespace EvernoteDesktop.PageObjectModel
         private readonly TestingProfile _testingProfile;
         private readonly TestContext _testContext;
         public ITestFrameworkConfiguration _config;
-        private readonly Logger _logger = LogManager.GetCurrentClassLogger();
+        private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
         public LoginPage(TestContext testContext, TestingProfile testProfile, ITestFrameworkConfiguration config) : base(testContext, testProfile, config)
         {
@@ -72,12 +72,14 @@ namespace EvernoteDesktop.PageObjectModel
 
         private void ConfirmRedirectToLoginPage()
         {
-            if (!Logo.IsDisplayed(new TimeSpan(0, 1, 30)))
+            //Logo.WaitForVisibility();
+            if (!Logo.IsDisplayed(new TimeSpan(0, 0, 30)))
             {
                 throw new InvalidOperationException("navigating to login page failed");
             }
             var currentUrl = new Common().WebDriver.Url;
             var url = _config.BaseUrl.ToString();
+            _logger.Info("****************LOGGING INFO***************");
             Assert.IsTrue(currentUrl.Contains(url));
         }
     }

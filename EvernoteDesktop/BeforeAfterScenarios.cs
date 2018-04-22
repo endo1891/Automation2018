@@ -16,6 +16,7 @@ namespace EvernoteDesktop
         private TestContext _context;
         public ITestFrameworkConfiguration _config;
         private LoginPage loginPage;
+        private BaseDashboardPage dash;
 
         public BeforeAfterScenarios() {
 
@@ -62,6 +63,7 @@ namespace EvernoteDesktop
         public void SetupPageObjects()
         {
             loginPage = _testScope.Resolve<Func<TestContext, LoginPage>>()(_context);
+            //dash = _testScope.Resolve<Func<TestContext, BaseDashboardPage>>()(_context);
         }
 
         [AfterScenario]

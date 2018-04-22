@@ -45,7 +45,7 @@ namespace EvernoteDesktop.LoginPageTesting
         public void BeforeStep()
         {
             login = testScope.Resolve<Func<TestContext, LoginPage>>()(_context);
-            dash = testScope.Resolve<Func<TestContext, BaseDashboardPage>>()(_context);
+            //dash = testScope.Resolve<Func<TestContext, BaseDashboardPage>>()(_context);
             //do for rest of page objects
         }
         string BaseUrl = ConfigurationManager.AppSettings["TestingApplicationUri"];
