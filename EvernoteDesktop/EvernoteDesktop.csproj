@@ -212,9 +212,15 @@
     <Content Include="Testlists\Profile1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+		<Content Include="Testlists\Profile2\">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Testlists\Profile1\">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\Debug\Profile1" />
+    <Folder Include="bin\Debug\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
