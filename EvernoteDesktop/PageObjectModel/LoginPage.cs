@@ -67,7 +67,7 @@ namespace EvernoteDesktop.PageObjectModel
         public void AutoLoginFirstStep()
         {
             _testingProfile.WebDriver.Navigate().GoToUrl(_config.BaseUrl);
-            ConfirmRedirectToLoginPage();
+            //ConfirmRedirectToLoginPage();
         }
 
         private void ConfirmRedirectToLoginPage()
