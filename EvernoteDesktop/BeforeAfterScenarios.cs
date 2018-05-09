@@ -27,6 +27,18 @@ namespace EvernoteDesktop
             _config = config;
         }
 
+        [BeforeTestRun(Order =1)]
+        public static void APIs()
+        {
+            new APIClient().UpdateDetails("BILLY");
+        }
+
+        [BeforeTestRun(Order = 2)]
+        public static void CleanBrowserCache()
+        {
+            new Common().KillProcesses();
+        }
+
         [BeforeScenario(Order = 1)]
         public void SetupScope() {
             if (!ScenarioContext.Current.TryGetValue("TestScope", out _testScope))
@@ -67,6 +79,7 @@ namespace EvernoteDesktop
         }
 
         [AfterScenario]
+        //[Scope(Tag = "ADDTAGNAMEHERE")]
         public void Teardown()
         {
             Common.FinalizeTest();

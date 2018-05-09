@@ -42,7 +42,8 @@ namespace EvernoteCommon
         private IWebElement GetElement(TimeSpan? timeout = null)
         {
             IWebElement elem = null;
-            var WebDriverWait = new WebDriverWait(WebDriver, timeout ?? TimeSpan.FromSeconds(5));
+            //var wait = new WebDriverWait(WebDriver, timeout ?? new TimeSpan(0, 0, 20));
+            var WebDriverWait = new WebDriverWait(WebDriver, new TimeSpan(0,0,20));
 
             try
             {
@@ -84,11 +85,10 @@ namespace EvernoteCommon
         }
 
         public bool PickDropdownItem(string item, TimeSpan? timeout = null)
-
         {
             IWebElement e = null;
 
-            var wait = new WebDriverWait(WebDriver, timeout ?? new TimeSpan(0, 0, 5));
+            var wait = new WebDriverWait(WebDriver, new TimeSpan(0, 0, 20));
             e = wait.Until(dr => dr.FindElement(By.XPath(XPath + @"/option[text()='" + item + "']")));
             e.Click();
             return true;
@@ -97,10 +97,9 @@ namespace EvernoteCommon
         public bool Click(TimeSpan? timeout = null)
         {
             WaitForVisibility();
-            //Sleep.HalfSecond();
             IWebElement elem = null;
 
-            var wait = new WebDriverWait(WebDriver, timeout ?? new TimeSpan(0, 0, 10));
+            var wait = new WebDriverWait(WebDriver, timeout ?? new TimeSpan(0, 0, 20));
 
             if (Predicate != null)
             {
@@ -207,7 +206,7 @@ namespace EvernoteCommon
 
         public bool Exists(TimeSpan? timeout = null)
         {
-            var wait = new WebDriverWait(WebDriver, timeout ?? new TimeSpan(0, 0, 15));
+            var wait = new WebDriverWait(WebDriver, timeout ?? new TimeSpan(0, 0, 20));
 
             if (Predicate == null)
             {
@@ -253,7 +252,7 @@ namespace EvernoteCommon
 
         public void WaitForVisibility(TimeSpan? timeout = null)
         {
-            var wait = new WebDriverWait(WebDriver, timeout ?? new TimeSpan(0, 0, 15));
+            var wait = new WebDriverWait(WebDriver, timeout ?? new TimeSpan(0, 0, 20));
             try
             {
                 wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath(XPath)));
@@ -267,7 +266,7 @@ namespace EvernoteCommon
 
         public void WaitForInvisibility(TimeSpan? timeout = null)
         {
-            var wait = new WebDriverWait(WebDriver, timeout ?? new TimeSpan(0, 0, 15));
+            var wait = new WebDriverWait(WebDriver, timeout ?? new TimeSpan(0, 0, 20));
             try
             {
                 wait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.XPath(XPath)));
@@ -282,7 +281,7 @@ namespace EvernoteCommon
         public void SelectCheckbox(TimeSpan? timeout = null)
         {
             IWebElement e = null;
-            var wait = new WebDriverWait(WebDriver, timeout ?? new TimeSpan(0, 0, 15));
+            var wait = new WebDriverWait(WebDriver, timeout ?? new TimeSpan(0, 0, 20));
             e = wait.Until(dr => dr.FindElement(By.XPath(XPath)));
 
             if (((RemoteWebDriver)WebDriver).Capabilities.BrowserName == "Firefox")

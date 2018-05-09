@@ -10,22 +10,42 @@ namespace EvernoteCommon
         public string CodeTitrePrefix { get; set; }
         public string Currency { get; set; }
         public string Email { get; set; }
+        public string Lastname { get; set; }
     }
 
     public class APIClient
     {
-        string cashUri = "api_end_point";
+        string myUri = "http://localhost:57905/";
         string emailUri = "api_end_point";
-        HttpResponseMessage response;
+        string resetUri = "http://localhost:57905/api/UpdateDetails/";
 
-        /*public HttpResponseMessage PutCashInUserAccount(string codeTitre, string currency, int amount, string usercode)
+        public HttpResponseMessage UpdateDetails(string lastname)
+        {
+            using (var client = new HttpClient())
+            {
+                AccountData data = new AccountData { Lastname = lastname };
+                client.BaseAddress = new Uri(resetUri);
+
+                var response = client.PutAsJsonAsync(resetUri + lastname+ "/", data).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    return new HttpResponseMessage(HttpStatusCode.OK);
+                }
+                else
+                {
+                    return new HttpResponseMessage(HttpStatusCode.NotFound);
+                }
+            }
+        }
+
+        public HttpResponseMessage PutCashInUserAccount(string codeTitre, string currency, int amount, string usercode)
         {
             using (var client = new HttpClient())
             {
                 AccountData data = new AccountData { CodeTitrePrefix = codeTitre, Currency = currency, Amount = amount};
-                client.BaseAddress = new Uri(cashUri);
+                client.BaseAddress = new Uri(myUri);
 
-                var response = client.PutAsJsonAsync(cashUri + usercode, data).Result;
+                var response = client.PutAsJsonAsync(myUri + usercode, data).Result;
                 if (response.IsSuccessStatusCode)
                 {
                     return new HttpResponseMessage(HttpStatusCode.OK);
@@ -53,7 +73,7 @@ namespace EvernoteCommon
                     return new HttpResponseMessage(HttpStatusCode.NotFound);
                 }
             }
-        }*/
+        }
         
     }
 }
