@@ -1,11 +1,9 @@
 ﻿using Autofac;
-using System.Configuration;
 using TechTalk.SpecFlow;
 using OpenQA.Selenium;
 using EvernoteDesktop.PageObjectModel;
 using System;
 using EvernoteCommon;
-using System.Reflection;
 
 namespace EvernoteDesktop
 {
@@ -30,7 +28,7 @@ namespace EvernoteDesktop
         [BeforeTestRun(Order =1)]
         public static void APIs()
         {
-            new APIClient().UpdateDetails("BILLY");
+            new APIClient().UpdateDetails("BAILLY");
         }
 
         [BeforeTestRun(Order = 2)]
